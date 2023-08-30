@@ -1,0 +1,48 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    min-height: 70px;
+}
+.header .logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+nav{
+    display: flex;
+
+    align-items: center;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #555;
+    padding: 0 15px;
+    /* font-size: 20px; */
+}
+nav .nav-cart{
+    cursor: pointer;
+    position: relative;
+}
+nav .nav-cart span{
+    position: absolute;
+    top: -12px;
+    right: -7px;
+    font-size: 10px;
+    background: crimson;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 50%;
+    z-index: -1;
+}
+@media (max-width : 650px){
+    nav ul li{
+        display: none;
+    }
+    .header{
+        padding: 0 20px;
+    }
+}
